@@ -7,7 +7,7 @@ class CustomTile extends StatelessWidget {
   CustomTile(this.pdf);
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: () {},
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 10.0),

@@ -16,5 +16,7 @@ class PdfStrings {
     PDF('Welcome', 'PDF · 5 Feb 2021 · 212.5kb', doc, Icons.mobile_friendly),
     PDF('Vend', 'PDF · 5 Feb 2021 · 212.5kb', pdf, Icons.file_copy),
     PDF('Setp Up Flutter', 'PDF · 5 Feb 2021 · 212.5kb', pdf, Icons.file_copy),
+    PDF('Vend', 'PDF · 5 Feb 2021 · 212.5kb', pdf, Icons.file_copy),
+    PDF('Setp Up Flutter', 'PDF · 5 Feb 2021 · 212.5kb', pdf, Icons.file_copy),
   ];
 }

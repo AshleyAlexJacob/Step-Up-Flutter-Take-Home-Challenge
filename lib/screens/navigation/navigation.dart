@@ -40,14 +40,14 @@ class NavigationScreen extends StatelessWidget {
               onPressed: () => navigateToSettings(context),
               child: Text(
                 'Settings App Screen Clone',
-                style: TextStyle(fontSize: 18, color: OurTheme().darkerGrey),
+                style: TextStyle(fontSize: 20, color: OurTheme().darkerGrey),
               ),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () => navigateToAdobe(context),
               child: Text(
                 'Adobe Acrobat Screen Clone',
-                style: TextStyle(fontSize: 18, color: OurTheme().darkerGrey),
+                style: TextStyle(fontSize: 20, color: OurTheme().darkerGrey),
               ),
             ),
           ],

@@ -8,7 +8,7 @@ class SpecialContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return items.length > 1
-        ? GestureDetector(
+        ? InkWell(
             onTap: () {},
             child: Container(
               height: 88.0 * items.length,
@@ -38,7 +38,7 @@ class SpecialContainer extends StatelessWidget {
                   itemCount: items.length),
             ),
           )
-        : GestureDetector(
+        : InkWell(
             onTap: () {},
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 10.0),

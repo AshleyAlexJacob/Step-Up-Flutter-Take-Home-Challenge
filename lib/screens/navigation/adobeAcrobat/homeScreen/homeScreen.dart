@@ -64,8 +64,11 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    print(MediaQuery.of(context).size.height);
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(FontAwesomeIcons.plus),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.blue,
         type: BottomNavigationBarType.fixed,
@@ -134,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen>
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Welcome back, Taha',
+            'Welcome back, Ashley',
             textAlign: TextAlign.start,
             style: TextStyle(
                 color: OurTheme().darkerGrey,
@@ -142,22 +145,14 @@ class _HomeScreenState extends State<HomeScreen>
                 fontWeight: FontWeight.w600),
           ),
           _getTabBar(),
+          //  MediaQuery.of(context).size.height *  0.55699481865284974093264248704663
           Container(
-            height: MediaQuery.of(context).size.height *
-                0.55699481865284974093264248704663,
+            height: MediaQuery.of(context).size.height - 100,
             child: _getTabBarView(
               <Widget>[
                 RecentFiles(),
                 Icon(Icons.settings),
               ],
-            ),
-          ),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: FloatingActionButton(
-              mini: true,
-              onPressed: () {},
-              child: Icon(FontAwesomeIcons.plus),
             ),
           ),
         ],
